@@ -22,18 +22,18 @@ _Complete reimplementation of the popular `matcher` package with 10x better perf
 
 ### 🆚 **Comparison with Popular Alternatives**
 
-| Feature                   |      matcher-latest      |    matcher     |   minimatch    |   multimatch   |      glob      |
-| ------------------------- | :----------------------: | :------------: | :------------: | :------------: | :------------: |
-| **TypeScript Support**    |      ✅ **Native**       |       ❌       |  ⚠️ _@types_   |  ⚠️ _@types_   |  ⚠️ _@types_   |
-| **Performance**           |   ✅ **19K+ ops/sec**    | ❌ ~2K ops/sec | ❌ ~5K ops/sec | ❌ ~3K ops/sec | ❌ ~1K ops/sec |
-| **Bundle Size**           |       ✅ **~12KB**       |    ✅ ~11KB    |    ❌ ~45KB    |    ❌ ~67KB    |   ❌ ~180KB    |
-| **Dependencies**          |       ✅ **Zero**        |    ✅ Zero     |   ❌ 2 deps    |   ❌ 4 deps    |  ❌ 11+ deps   |
-| **Fuzzy Matching**        |     ✅ **Built-in**      |       ❌       |       ❌       |       ❌       |       ❌       |
-| **Advanced Results**      |   ✅ **Rich metadata**   |    ❌ Basic    |    ❌ Basic    |    ❌ Basic    |    ❌ Basic    |
-| **Pattern Caching**       |    ✅ **Intelligent**    |       ❌       |       ❌       |       ❌       |       ❌       |
-| **Multi-segment Support** | ✅ **Custom separators** |       ❌       |   ⚠️ Limited   |   ⚠️ Limited   |   ⚠️ Limited   |
-| **Accent Insensitive**    |    ✅ **i18n ready**     |       ❌       |       ❌       |       ❌       |       ❌       |
-| **Active Maintenance**    |       ✅ **2025**        |    ⚠️ 2021     |   ✅ Active    |   ✅ Active    |   ✅ Active    |
+| Feature                   | matcher-latest           | matcher        | minimatch      | multimatch     | glob           |
+| ------------------------- | ------------------------ | -------------- | -------------- | -------------- | -------------- |
+| **TypeScript Support**    | ✅ **Native**            | ❌             | ⚠️ _@types_    | ⚠️ _@types_    | ⚠️ _@types_    |
+| **Performance**           | ✅ **19K+ ops/sec**      | ❌ ~2K ops/sec | ❌ ~5K ops/sec | ❌ ~3K ops/sec | ❌ ~1K ops/sec |
+| **Bundle Size**           | ✅ **~12KB**             | ✅ ~11KB       | ❌ ~45KB       | ❌ ~67KB       | ❌ ~180KB      |
+| **Dependencies**          | ✅ **Zero**              | ✅ Zero        | ❌ 2 deps      | ❌ 4 deps      | ❌ 11+ deps    |
+| **Fuzzy Matching**        | ✅ **Built-in**          | ❌             | ❌             | ❌             | ❌             |
+| **Advanced Results**      | ✅ **Rich metadata**     | ❌ Basic       | ❌ Basic       | ❌ Basic       | ❌ Basic       |
+| **Pattern Caching**       | ✅ **Intelligent**       | ❌             | ❌             | ❌             | ❌             |
+| **Multi-segment Support** | ✅ **Custom separators** | ❌             | ⚠️ Limited     | ⚠️ Limited     | ⚠️ Limited     |
+| **Accent Insensitive**    | ✅ **i18n ready**        | ❌             | ❌             | ❌             | ❌             |
+| **Active Maintenance**    | ✅ **2025**              | ⚠️ 2021        | ✅ Active      | ✅ Active      | ✅ Active      |
 
 ### � **Performance Benchmarks**
 
@@ -61,8 +61,20 @@ glob:             1,023 ops/sec  📊 18.6x slower
 
 ### Installation
 
+Choose your preferred package manager:
+
 ```bash
+# npm
 npm install matcher-latest
+
+# yarn
+yarn add matcher-latest
+
+# pnpm
+pnpm add matcher-latest
+
+# bun
+bun add matcher-latest
 ```
 
 ### Basic Usage (100% Compatible with Original `matcher`)
@@ -650,18 +662,18 @@ const searchResults = partialMatch(productNames, searchTerm);
 
 ## 📊 Comparison
 
-| Feature                   |      matcher-latest      |    matcher     |   minimatch    |   multimatch   |      glob      |
-| ------------------------- | :----------------------: | :------------: | :------------: | :------------: | :------------: |
-| **TypeScript Support**    |      ✅ **Native**       |       ❌       |  ⚠️ _@types_   |  ⚠️ _@types_   |  ⚠️ _@types_   |
-| **Performance**           |   ✅ **19K+ ops/sec**    | ❌ ~2K ops/sec | ❌ ~5K ops/sec | ❌ ~3K ops/sec | ❌ ~1K ops/sec |
-| **Bundle Size**           |       ✅ **~12KB**       |    ✅ ~11KB    |    ❌ ~45KB    |    ❌ ~67KB    |   ❌ ~180KB    |
-| **Dependencies**          |       ✅ **Zero**        |    ✅ Zero     |   ❌ 2 deps    |   ❌ 4 deps    |  ❌ 11+ deps   |
-| **Fuzzy Matching**        |     ✅ **Built-in**      |       ❌       |       ❌       |       ❌       |       ❌       |
-| **Advanced Results**      |   ✅ **Rich metadata**   |    ❌ Basic    |    ❌ Basic    |    ❌ Basic    |    ❌ Basic    |
-| **Pattern Caching**       |    ✅ **Intelligent**    |       ❌       |       ❌       |       ❌       |       ❌       |
-| **Multi-segment Support** | ✅ **Custom separators** |       ❌       |   ⚠️ Limited   |   ⚠️ Limited   |   ⚠️ Limited   |
-| **Accent Insensitive**    |    ✅ **i18n ready**     |       ❌       |       ❌       |       ❌       |       ❌       |
-| **Active Maintenance**    |       ✅ **2025**        |    ⚠️ 2021     |   ✅ Active    |   ✅ Active    |   ✅ Active    |
+| Feature                   | matcher-latest           | matcher        | minimatch      | multimatch     | glob           |
+| ------------------------- | ------------------------ | -------------- | -------------- | -------------- | -------------- |
+| **TypeScript Support**    | ✅ **Native**            | ❌             | ⚠️ _@types_    | ⚠️ _@types_    | ⚠️ _@types_    |
+| **Performance**           | ✅ **19K+ ops/sec**      | ❌ ~2K ops/sec | ❌ ~5K ops/sec | ❌ ~3K ops/sec | ❌ ~1K ops/sec |
+| **Bundle Size**           | ✅ **~12KB**             | ✅ ~11KB       | ❌ ~45KB       | ❌ ~67KB       | ❌ ~180KB      |
+| **Dependencies**          | ✅ **Zero**              | ✅ Zero        | ❌ 2 deps      | ❌ 4 deps      | ❌ 11+ deps    |
+| **Fuzzy Matching**        | ✅ **Built-in**          | ❌             | ❌             | ❌             | ❌             |
+| **Advanced Results**      | ✅ **Rich metadata**     | ❌ Basic       | ❌ Basic       | ❌ Basic       | ❌ Basic       |
+| **Pattern Caching**       | ✅ **Intelligent**       | ❌             | ❌             | ❌             | ❌             |
+| **Multi-segment Support** | ✅ **Custom separators** | ❌             | ⚠️ Limited     | ⚠️ Limited     | ⚠️ Limited     |
+| **Accent Insensitive**    | ✅ **i18n ready**        | ❌             | ❌             | ❌             | ❌             |
+| **Active Maintenance**    | ✅ **2025**              | ⚠️ 2021        | ✅ Active      | ✅ Active      | ✅ Active      |
 
 ## 🙏 Acknowledgments
 
